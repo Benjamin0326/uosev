@@ -1,0 +1,305 @@
+<html class="no-js">
+<div class="main">
+<header class="header-part">
+  <div id='home'>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+
+          <a style='margin-left:100px; margin-top:15px;'class="navbar-brand" href="/">
+            <img alt="UOSEV" src="<%=image_url 'logo.png'%>">
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <ul class="nav navbar-nav">
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <% if user_signed_in? %>
+            <li>
+              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+            </li>
+          <% else %>
+            <li>
+              <%= link_to('Login', new_user_session_path)  %>
+            </li>
+          <% end %>
+        </ul>
+      </div><!-- /.container-fluid -->
+    </nav>
+	</div>
+
+
+</header>
+
+<!--   Start Blog with Sidebar   -->
+
+  <section class="blog-sidebar">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8">
+          <div class="blog-content">
+            <div class="sidebar-blog-content">
+              <div class="row">
+                <div class="col-xs-12">
+                  <%= image_tag("blog-image01.jpg", alt: 'blog-image', class: "img-responsive") %>
+                </div>
+                <div class="col-xs-2 col-sm-3 col-md-2">
+                  <div class="blog-date">
+                    <p> <span>15</span> janu 2015</p>
+                  </div>
+                </div>
+                <div class="wow zoomIn col-xs-12 col-sm-9 col-md-10">
+                  <h1><a href="#">This is a standard post format with Vimeo Video</a></h1>
+                  <div class="icon-holder">
+                    <a href="#"><span><i class="flaticon-man494"></i> admin</span></a>
+                    <a href="#"><span><i class="flaticon-eye128"></i> views</span></a>
+                    <a href="#"><span><i class="flaticon-comments16"></i>comments</span></a>
+                  </div>
+                  <p class="contents">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ex quis arcu ultrices semper. Donec porttitor, justo sed convallis suscipit, magna est ullamcorper magna, nec efficitur enim felis vitae est. Fusce condimentum lobortis est, vitae dictum augue tempus ac. Pellentesque habitant morbi tristique senectus et netus Curae;
+                  </p>
+                  <a href="#"><button class="btn">read more</button></a>
+                </div>
+              </div><!-- row -->
+            </div><!-- sidebar-blog-content -->
+          </div><!-- blog-content -->
+
+          <div class="blog-content">
+            <div class="sidebar-blog-content">
+              <div class="row">
+                <div class="wow zoomIn col-xs-12">
+                  <iframe src="http://player.vimeo.com/video/80255970?color=569eba&title=0&portrait=0&badge=0" class="video-area" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <div class="col-xs-2 col-sm-3 col-md-2">
+                  <div class="blog-date">
+                    <p> <span>15</span> janu 2015</p>
+                  </div>
+                </div>
+                <div class="wow zoomIn col-xs-12 col-sm-9 col-md-10">
+                  <h1><a href="#">This is a standard post format with Vimeo Video</a></h1>
+                  <div class="icon-holder">
+                    <a href="#"><span><i class="flaticon-man494"></i> admin</span></a>
+                    <a href="#"><span><i class="flaticon-eye128"></i> views</span></a>
+                    <a href="#"><span><i class="flaticon-comments16"></i>comments</span></a>
+                  </div>
+                  <p class="contents">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ex quis arcu ultrices semper. Donec porttitor, justo sed convallis suscipit, magna est ullamcorper magna, nec efficitur enim felis vitae est. Fusce condimentum lobortis est, vitae dictum augue tempus ac. Pellentesque habitant morbi tristique senectus et netus Curae;
+                  </p>
+                  <a href="#"><button class="btn">read more</button></a>
+                </div>
+              </div><!-- row -->
+            </div><!-- /.sidebar-blog-content -->
+          </div><!-- blog-content -->
+
+          <div class="blog-content">
+            <div class="sidebar-blog-content">
+              <div class="row">
+                <div class="wow zoomIn col-xs-12">
+                  <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/138464532&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                </div>
+                <div class="wow zoomIn col-xs-2 col-sm-3 col-md-2">
+                  <div class="blog-date">
+                    <p> <span>15</span> janu 2015</p>
+                  </div>
+                </div>
+                <div class="wow zoomIn col-xs-12 col-sm-9 col-md-10">
+                  <h1><a href="#">This is a standard post format with Vimeo Video</a></h1>
+                  <div class="icon-holder">
+                    <a href="#"><span><i class="flaticon-man494"></i> admin</span></a>
+                    <a href="#"><span><i class="flaticon-eye128"></i> views</span></a>
+                    <a href="#"><span><i class="flaticon-comments16"></i>comments</span></a>
+                  </div>
+                  <p class="contents">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id ex quis arcu ultrices semper. Donec porttitor, justo sed convallis suscipit, magna est ullamcorper magna, nec efficitur enim felis vitae est. Fusce condimentum lobortis est, vitae dictum augue tempus ac. Pellentesque habitant morbi tristique senectus et netus Curae;
+                  </p>
+                  <a href="#"><button class="btn">read more</button></a>
+                </div>
+              </div><!-- row -->
+            </div><!-- /.sidebar-blog-content -->
+          </div> <!-- blog-content -->
+
+
+
+          <div class="blog-content pagination-content">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="wow zoomIn col-xs-12 col-sm-10 col-sm-offset-2 ">
+                  <nav>
+                    <ul class="pagination  pagination-lg">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">&larr; </span><small>previous</small>
+                        </a>
+                      </li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <small>next</small><span aria-hidden="true"> &rarr;</span>
+                        </a>
+                      </li>
+                    </ul><!-- pagination -->
+                  </nav>
+
+                </div>
+              </div><!-- row -->
+            </div><!-- container-fluid -->
+          </div><!-- /.pagination-content -->
+        </div>
+
+        <div class="wow zoomIn col-xs-12 col-sm-12 col-md-4 "> <!-- col-xs-12 col-sm-12 col-md-4  -->
+          <div class="sidebar">
+            <div class="list-group">
+              <a href="#" class="list-group-item active">
+                categories
+              </a>
+              <a href="#" class="list-group-item">Web Design <span class="pull-right">(14)</span></a>
+              <a href="#" class="list-group-item">Illustration <span class="pull-right">(14)</span></a>
+              <a href="#" class="list-group-item">HTML5 & CSS3 <span class="pull-right">(14)</span></a>
+              <a href="#" class="list-group-item">Bootstrap <span class="pull-right">(14)</span></a>
+            </div><!-- /.list-group -->
+          </div><!-- sidebar -->
+          <div class="blog-sidebar sidebar">
+            <div class="sidebar-heading">
+              recent posts
+            </div>
+            <div class="media"><!-- media -->
+              <div class="media-left"><!-- media-left -->
+                <a href="#">
+                  <%= image_tag("thumb-01.jpg", alt: 'thumb-01', class: "media-object") %>
+                </a>
+              </div><!-- /.media-left -->
+              <div class="media-body"><!-- media-body -->
+                <h3 class="media-heading"><a href="#">Agna est ullamcorper</a></h3>
+                <p>December 31, 2014</p>
+                <a href="#"><span>0 Conmments</span></a>
+              </div><!-- /.media-body -->
+            </div> <!-- /.media -->
+
+            <div class="media"> <!-- media -->
+              <div class="media-left">
+                <a href="#">
+									<%= image_tag("thumb-02.jpg", alt: 'thumb-02', class: "media-object") %>
+                </a>
+              </div><!-- media-left -->
+              <div class="media-body">
+                <h3 class="media-heading"><a href="#">Agna est ullamcorper</a></h3>
+                <p>December 31, 2014</p>
+                <a href="#"><span>0 Conmments</span></a>
+              </div><!-- media-body -->
+            </div> <!-- /.media -->
+
+
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <%= image_tag("thumb-03.jpg", alt: 'thumb-03', class: "media-object") %>
+                </a>
+              </div><!-- media-left -->
+              <div class="media-body">
+                <h3 class="media-heading"><a href="#">Agna est ullamcorper</a></h3>
+                <p>December 31, 2014</p>
+                <a href="#"><span>0 Conmments</span></a>
+              </div><!-- media-body -->
+            </div><!-- /.media -->
+
+
+          </div><!-- blog-sidebar -->
+
+          <div class="blog-sidebar sidebar">
+            <div class="sidebar-heading">
+              tags
+            </div>
+            <ul>
+              <li><a href="#">logo</a></li>
+              <li><a href="#">html</a></li>
+              <li><a href="#">design</a></li>
+              <li><a href="#">bootstrap</a></li>
+              <li><a href="#">css</a></li>
+              <li><a href="#">development</a></li>
+            </ul>
+          </div><!-- blog-sidebar -->
+        </div>
+      </div><!-- row -->
+    </div><!-- container -->
+  </section>
+
+
+<!-- footer -->
+<footer >
+  <div class="footer-wrapper section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="wow zoomIn col-xs-12 col-sm-6 col-md-3">
+          <a href="index.html"><%= image_tag "footer-logo.png" %></a>
+          <p class="footer-content">Lorem ipsum dolor sit amet, consect tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven.</p>
+        </div><!-- /.col-xs-12 .col-sm-3 .col-md-3 -->
+        <div class="wow zoomIn col-xs-12 col-sm-3 col-md-3">
+          <p class="footer-heading">link</p>
+          <ul class="footermenu">
+            <li><a href="index.html">about us</a></li>
+            <li><a href="index.html">services</a></li>
+            <li><a href="index.html">product</a></li>
+            <li><a href="index.html">team</a></li>
+            <li><a href="index.html">blog</a></li>
+          </ul>
+        </div><!-- /.col-xs-12 .col-sm-3 .col-md-3 -->
+        <div class="wow zoomIn col-xs-12 col-sm-6 col-md-3">
+          <p class="footer-heading">find us</p>
+          <ul class="footercontact">
+            <li><i class="flaticon-mainpage"></i><span>address:</span> One TECHGUT loop, 54100</li>
+            <li><i class="flaticon-phone16"></i><span>phone:</span><a href="tel:88 02 8714612"> +88 02 8714612</a></li>
+            <li><i class="flaticon-email21"></i><span>e-mail:</span><a href="mailto:support@themerole.com"> support@themerole.com</a></li>
+            <li><i class="flaticon-world91"></i><span>web:</span><a href="http://themerole.com/"> www.themerole.com</a></li>
+          </ul>
+          <i class="flaticon-home78"></i>
+        </div><!-- /.col-xs-12 .col-sm-3 .col-md-3 -->
+        <div class="wow zoomIn col-xs-12 col-sm-6 col-md-3">
+          <p class="footer-heading">recent posts</p>
+          <ul class="footerblog">
+            <li><a href="#">The Green Fields of Spring</a> <p>13th Jun 2014</p></li>
+            <li><a href="#">This is a Video Post</a> <p>18th Nov 2014</p></li>
+            <li><a href="#">Satisfaction Lies in the Effort</a> <p>13th Jun 2014</p></li>
+          </ul>
+        </div><!-- /.col-xs-12 .col-sm-3 .col-md-3 -->
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="wow zoomIn col-xs-12">
+          <p>© 2015 All rights reserved. <span>techgut</span> theme by <a href="http://themerole.com">themerole</a></p>
+          <div class="backtop  pull-right">
+            <i class="fa fa-angle-up back-to-top"></i>
+          </div>
+        </div><!-- /.col-xs-12 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.creditwrapper -->
+</footer><!-- /Footer -->
+
+<!-- MMENU  -->
+<nav id="menu">
+  <ul>
+    <li><a href="index.html">home</a></li>
+    <li><a href="index.html">about us</a></li>
+    <li><a href="index.html">services</a></li>
+    <li><a href="index.html">product</a></li>
+    <li><a href="index.html">team</a></li>
+    <li><a href="index.html">blog</a>
+        <ul>
+          <li><a href="blog-full-width.html">full width blog</a></li>
+          <li><a href="#">sidebar blog</a></li>
+        </ul>
+    </li>
+    <li><a href="index.html">contact</a></li>
+  </ul>
+</nav><!-- /#menu -->
+
+</div><!-- /.main -->
